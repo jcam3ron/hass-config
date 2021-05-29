@@ -4,5 +4,4 @@ zone:
   - name: Home
     latitude: !secret home_lat
     longitude: !secret home_long
-    elevation: !secret home_elev
     radius: 100

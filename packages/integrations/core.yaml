@@ -4,9 +4,6 @@
 # Show links to resources in log and frontend
 # introduction:
 
-# Enable iOS frontend
-ios:
-
 # Enables configuration UI
 config:
 
@@ -56,6 +53,8 @@ sun:
 
 # Home Assistant Cloud
 #cloud:
+# Enable iOS frontend
+#ios:
 
 # Universal Plug and Play
 #upnp:

@@ -1,0 +1,20 @@
+---
+light:
+
+  - platform: mqtt
+    schema: json
+    name: "Living Room Downlights"
+    command_topic: "zigbee2mqtt/living_room_downlights/set"
+    state_topic: "zigbee2mqtt/living_room_downlights"
+    color_temp: true
+    brightness: true
+    rgb: true
+
+  - platform: mqtt
+    schema: json
+    name: "Dining Nook Downlights"
+    command_topic: "zigbee2mqtt/dining_nook_downlights/set"
+    state_topic: "zigbee2mqtt/dining_nook_downlights"
+    color_temp: true
+    brightness: true
+    rgb: true

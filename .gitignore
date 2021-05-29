@@ -1,0 +1,19 @@
+# ignore top-level
+/.cache
+/.cloud
+/.config
+/.storage
+/deps
+/tts
+/*.db*
+
+# ignore patterns
+*.log
+
+# ignore specific files
+secrets.yaml
+customize.yaml
+
+# don't ignore
+!/.stubs/*
+!/.gitignore

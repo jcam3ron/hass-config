@@ -3,8 +3,8 @@ homeassistant:
   name: Home
   unit_system: !secret unit_system
   time_zone: !secret timezone
-  latitude: !secret home_lat
-  longitude: !secret home_long
-  elevation: !secret home_elev
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: !secret elevation
   customize: !include customize.yaml
   packages: !include_dir_named packages

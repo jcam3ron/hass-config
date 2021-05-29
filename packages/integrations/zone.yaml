@@ -2,6 +2,6 @@
 zone:
 
   - name: Home
-    latitude: !secret home_lat
-    longitude: !secret home_long
+    latitude: !secret latitude
+    longitude: !secret longitude
     radius: 100

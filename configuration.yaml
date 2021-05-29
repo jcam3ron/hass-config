@@ -5,4 +5,3 @@ homeassistant:
   time_zone: !secret timezone
   customize: !include customize.yaml
   packages: !include_dir_named packages
-

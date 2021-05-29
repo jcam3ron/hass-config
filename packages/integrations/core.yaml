@@ -2,7 +2,7 @@
 ### Home Assistant Core Configurations ###
 
 # Show links to resources in log and frontend
-#introduction:
+# introduction:
 
 # Enable iOS frontend
 ios:

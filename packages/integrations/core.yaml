@@ -55,7 +55,7 @@ map:
 sun:
 
 # Home Assistant Cloud
-cloud:
+#cloud:
 
 # Universal Plug and Play
-upnp:
+#upnp:

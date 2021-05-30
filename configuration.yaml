@@ -8,3 +8,22 @@ homeassistant:
   elevation: !secret elevation
   customize: !include customize.yaml
   packages: !include_dir_named packages
+  auth_providers:
+    - type: homeassistant
+
+# https://www.home-assistant.io/integrations/default_config/
+default_config:
+
+# https://www.home-assistant.io/integrations/logger/
+logger:
+  default: warn
+
+# https://www.home-assistant.io/integrations/upnp/
+upnp:
+
+# https://www.home-assistant.io/integrations/discovery/
+discovery:
+
+mqtt:
+  broker: !secret mqtt_broker
+  port: !secret mqtt_port

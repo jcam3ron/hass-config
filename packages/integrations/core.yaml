@@ -50,11 +50,3 @@ map:
 
 # Track the sun
 sun:
-
-# Home Assistant Cloud
-#cloud:
-# Enable iOS frontend
-#ios:
-
-# Universal Plug and Play
-#upnp:

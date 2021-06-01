@@ -1,0 +1,4 @@
+---
+webostv:
+  host: !secret tv_ip_addr
+  name: Living Room TV

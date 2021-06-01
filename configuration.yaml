@@ -19,7 +19,7 @@ logger:
   default: warn
 
 # https://www.home-assistant.io/integrations/upnp/
-upnp:
+# upnp:
 
 # https://www.home-assistant.io/integrations/discovery/
 discovery:

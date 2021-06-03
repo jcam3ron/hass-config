@@ -9,6 +9,7 @@ homekit:
         - climate.main_bedroom
         - light.dining_nook_downlights
         - light.living_room_downlights
+        - light.entryway_downlights
 
 automation:
   - alias: 'Homekit - Routine Reload'

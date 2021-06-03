@@ -4,26 +4,68 @@ light:
   - platform: mqtt
     schema: json
     name: "Living Room Downlights"
+    unique_id: "z2m_gr_1"
     command_topic: "zigbee2mqtt/living_room_downlights/set"
     state_topic: "zigbee2mqtt/living_room_downlights"
     brightness: true
+    brightness_scale: 254
     color_mode: true
-    supported_color_modes: ["color_temp", "rgbw"]
+    supported_color_modes:
+      - "xy"
+      - "color_temp"
+    max_mireds: 500
+    min_mireds: 150
+    effect: true
+    effect_list:
+      - "blink"
+      - "breathe"
+      - "okay"
+      - "channel_change"
+      - "finish_effect"
+      - "stop_effect"
 
   - platform: mqtt
     schema: json
     name: "Dining Nook Downlights"
+    unique_id: "z2m_gr_2"
     command_topic: "zigbee2mqtt/dining_nook_downlights/set"
     state_topic: "zigbee2mqtt/dining_nook_downlights"
     brightness: true
+    brightness_scale: 254
     color_mode: true
-    supported_color_modes: ["color_temp", "rgbw"]
+    supported_color_modes:
+      - "xy"
+      - "color_temp"
+    max_mireds: 500
+    min_mireds: 150
+    effect: true
+    effect_list:
+      - "blink"
+      - "breathe"
+      - "okay"
+      - "channel_change"
+      - "finish_effect"
+      - "stop_effect"
 
   - platform: mqtt
     schema: json
     name: "Entryway Downlights"
+    unique_id: "z2m_gr_3"
     command_topic: "zigbee2mqtt/entryway_downlights/set"
     state_topic: "zigbee2mqtt/entryway_downlights"
     brightness: true
+    brightness_scale: 254
     color_mode: true
-    supported_color_modes: ["color_temp", "rgbw"]
+    supported_color_modes:
+      - "xy"
+      - "color_temp"
+    max_mireds: 500
+    min_mireds: 150
+    effect: true
+    effect_list:
+      - "blink"
+      - "breathe"
+      - "okay"
+      - "channel_change"
+      - "finish_effect"
+      - "stop_effect"

@@ -10,6 +10,11 @@ homekit:
         - light.dining_nook_downlights
         - light.living_room_downlights
         - light.entryway_downlights
+        - switch.adaptive_lighting_living_room
+    entity_config:
+      switch.adaptive_lighting_living_room:
+        name: Living Room Enable Adaptive Lighting
+        type: switch
 
 automation:
   - alias: 'Homekit - Routine Reload'

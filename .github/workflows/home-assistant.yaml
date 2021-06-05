@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Getting your configuration from GitHub
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - name: Running YAMLlint
         uses: "docker://pipelinecomponents/yamllint:latest"
         with:
@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-18.04
     steps:
       - name: Getting your configuration from GitHub
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
       - name: Running Remark lint
         uses: "docker://pipelinecomponents/remark-lint:latest"
         continue-on-error: true
@@ -33,7 +33,9 @@ jobs:
     needs: [yamllint, remarklint]
     steps:
       - name: Getting your configuration from GitHub
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
+        with:
+          submodules: true
       - name: Copy stub files into configuration folder
         run: cp -R ./.stubs/* .
       - name: Home Assistant Version
@@ -51,7 +53,9 @@ jobs:
     needs: [yamllint, remarklint]
     steps:
       - name: Getting your configuration from GitHub
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2
+        with:
+          submodules: true
       - name: Copy stub files into configuration folder
         run: cp -R ./.stubs/* .
       - name: Home Assistant Version

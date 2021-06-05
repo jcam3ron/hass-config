@@ -1,0 +1,3 @@
+[submodule "submodules/adaptive-lighting"]
+	path = submodules/adaptive-lighting
+	url = https://github.com/basnijholt/adaptive-lighting

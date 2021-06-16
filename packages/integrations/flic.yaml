@@ -1,0 +1,5 @@
+---
+binary_sensor:
+  - platform: flic
+    host: !secret flic_hub_ip_addr
+    discovery: true

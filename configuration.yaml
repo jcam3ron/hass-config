@@ -27,3 +27,4 @@ discovery:
 mqtt:
   broker: !secret mqtt_broker
   port: !secret mqtt_port
+  discovery: false

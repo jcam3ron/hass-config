@@ -15,5 +15,3 @@ automation:
       - service: light.toggle
         target:
           entity_id: light.living_area_lights
-        data:
-          transition: 3

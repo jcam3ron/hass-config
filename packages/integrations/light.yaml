@@ -71,8 +71,9 @@ light:
       - "stop_effect"
 
   - platform: group
-    name: living_area_lights
+    name: "Living Area Lights"
     entities:
       - light.living_room_downlights
+      - light.entryway_downlights
       - light.dining_nook_downlights
       - light.stand_lamp

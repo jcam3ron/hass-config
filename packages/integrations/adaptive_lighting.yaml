@@ -5,6 +5,7 @@ adaptive_lighting:
       - light.dining_nook_downlights
       - light.living_room_downlights
       - light.entryway_downlights
+      - light.stand_lamp
     prefer_rgb_color: false
     transition: 5  # seconds
     initial_transition: 5  # seconds

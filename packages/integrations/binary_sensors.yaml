@@ -1,0 +1,15 @@
+---
+binary_sensor:
+
+  # Workday
+  - platform: workday
+    name: workday
+    country: !secret country_code
+    province: !secret state
+
+  # Worknight
+  - platform: workday
+    name: worknight
+    country: !secret country_code
+    province: !secret state
+    days_offset: 1

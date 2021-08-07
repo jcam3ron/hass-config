@@ -4,7 +4,7 @@ light:
   - platform: mqtt
     schema: json
     name: "Living Room Downlights"
-    unique_id: "z2m_gr_1"
+    unique_id: "living_room_downlights"
     command_topic: "zigbee2mqtt/living_room_downlights/set"
     state_topic: "zigbee2mqtt/living_room_downlights"
     brightness: true
@@ -27,7 +27,7 @@ light:
   - platform: mqtt
     schema: json
     name: "Dining Nook Downlights"
-    unique_id: "z2m_gr_2"
+    unique_id: "dining_nook_downlights"
     command_topic: "zigbee2mqtt/dining_nook_downlights/set"
     state_topic: "zigbee2mqtt/dining_nook_downlights"
     brightness: true
@@ -50,7 +50,7 @@ light:
   - platform: mqtt
     schema: json
     name: "Entryway Downlights"
-    unique_id: "z2m_gr_3"
+    unique_id: "entryway_downlights"
     command_topic: "zigbee2mqtt/entryway_downlights/set"
     state_topic: "zigbee2mqtt/entryway_downlights"
     brightness: true
@@ -69,3 +69,10 @@ light:
       - "channel_change"
       - "finish_effect"
       - "stop_effect"
+
+  - platform: group
+    name: living_area_lights
+    entities:
+      - light.living_room_downlights
+      - light.dining_nook_downlights
+      - light.stand_lamp

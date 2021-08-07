@@ -1,5 +1,19 @@
 ---
-binary_sensor:
-  - platform: flic
-    host: !secret flic_hub_ip_addr
-    discovery: true
+# binary_sensor:
+#   - platform: flic
+#     host: !secret flic_hub_ip_addr
+#     discovery: true
+
+# flic button 1
+automation:
+  - id: flic_1_click
+    alias: 'Flic 1 - click'
+    trigger:
+      - platform: webhook
+        webhook_id: "flic_1_click"
+    action:
+      - service: light.toggle
+        target:
+          entity_id: light.living_area_lights
+        data:
+          transition: 3

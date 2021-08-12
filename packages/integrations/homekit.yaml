@@ -10,10 +10,14 @@ homekit:
         - light.dining_nook_downlights
         - light.living_room_downlights
         - light.entryway_downlights
-        - switch.adaptive_lighting_living_room
+        - switch.adaptive_lighting
+        - switch.adaptive_lighting_sleep_mode
     entity_config:
-      switch.adaptive_lighting_living_room:
-        name: Living Room Enable Adaptive Lighting
+      switch.adaptive_lighting:
+        name: Adaptive Lighting
+        type: switch
+      switch.adaptive_lighting_sleep_mode:
+        name: Adaptive Lighting Sleep Mode
         type: switch
 
 automation:

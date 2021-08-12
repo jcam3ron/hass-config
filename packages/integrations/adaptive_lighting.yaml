@@ -35,7 +35,7 @@ adaptive_lighting:
     min_color_temp: 1000
     max_color_temp: 5500
     sleep_brightness: 1
-    sleep_color_temp: 1500
+    sleep_color_temp: 1000
     # sunrise_time: "08:00:00"  # override the sunrise time
     # sunrise_offset: '00:00:00'
     # sunset_time:
@@ -44,8 +44,46 @@ adaptive_lighting:
     detect_non_ha_changes: true
     only_once: false
 
+switch:
+  - platform: template
+    switches:
+      adaptive_lighting:
+        value_template: "{{ is_state('switch.adaptive_lighting_living_room', 'on') or is_state('switch.adaptive_lighting_bedroom', 'on') }}"
+        turn_on:
+          - service: switch.turn_on
+            target:
+              entity_id: switch.adaptive_lighting_living_room
+          - service: switch.turn_on
+            target:
+              entity_id: switch.adaptive_lighting_bedroom
+        turn_off:
+          - service: switch.turn_off
+            target:
+              entity_id: switch.adaptive_lighting_living_room
+          - service: switch.turn_off
+            target:
+              entity_id: switch.adaptive_lighting_bedroom
+  - platform: template
+    switches:
+      adaptive_lighting_sleep_mode:
+        value_template: "{{ is_state('switch.adaptive_lighting_sleep_mode_living_room', 'on') or is_state('switch.adaptive_lighting_sleep_mode_bedroom', 'on') }}"
+        turn_on:
+          - service: switch.turn_on
+            target:
+              entity_id: switch.adaptive_lighting_sleep_mode_living_room
+          - service: switch.turn_on
+            target:
+              entity_id: switch.adaptive_lighting_sleep_mode_bedroom
+        turn_off:
+          - service: switch.turn_off
+            target:
+              entity_id: switch.adaptive_lighting_sleep_mode_living_room
+          - service: switch.turn_off
+            target:
+              entity_id: switch.adaptive_lighting_sleep_mode_bedroom
+
 automation:
-  - alias: "Adaptive lighting: reset manual_control after 1 hour"
+  - alias: "Adaptive lighting: reset manual_control after 3 hours"
     mode: parallel
     trigger:
       platform: event
@@ -54,7 +92,7 @@ automation:
       light: "{{ trigger.event.data.entity_id }}"
       switch: "{{ trigger.event.data.switch }}"
     action:
-      - delay: "01:00:00"
+      - delay: "03:0:00"
       - condition: template
         value_template: "{{ light in state_attr(switch, 'manual_control') }}"
       - service: adaptive_lighting.set_manual_control

@@ -7,11 +7,12 @@ light:
     unique_id: "living_room_downlights"
     command_topic: "zigbee2mqtt/living_room_downlights/set"
     state_topic: "zigbee2mqtt/living_room_downlights"
+    availability_topic: "zigbee2mqtt/bridge/state"
     brightness: true
     brightness_scale: 254
     color_mode: true
     supported_color_modes:
-      - "xy"
+      # - "xy"
       - "color_temp"
     max_mireds: 500
     min_mireds: 150
@@ -30,11 +31,12 @@ light:
     unique_id: "dining_nook_downlights"
     command_topic: "zigbee2mqtt/dining_nook_downlights/set"
     state_topic: "zigbee2mqtt/dining_nook_downlights"
+    availability_topic: "zigbee2mqtt/bridge/state"
     brightness: true
     brightness_scale: 254
     color_mode: true
     supported_color_modes:
-      - "xy"
+      # - "xy"
       - "color_temp"
     max_mireds: 500
     min_mireds: 150
@@ -53,11 +55,12 @@ light:
     unique_id: "entryway_downlights"
     command_topic: "zigbee2mqtt/entryway_downlights/set"
     state_topic: "zigbee2mqtt/entryway_downlights"
+    availability_topic: "zigbee2mqtt/bridge/state"
     brightness: true
     brightness_scale: 254
     color_mode: true
     supported_color_modes:
-      - "xy"
+      # - "xy"
       - "color_temp"
     max_mireds: 500
     min_mireds: 150
@@ -76,11 +79,12 @@ light:
     unique_id: "living_area_downlights"
     command_topic: "zigbee2mqtt/living_area_downlights/set"
     state_topic: "zigbee2mqtt/living_area_downlights"
+    availability_topic: "zigbee2mqtt/bridge/state"
     brightness: true
     brightness_scale: 254
     color_mode: true
     supported_color_modes:
-      - "xy"
+      # - "xy"
       - "color_temp"
     max_mireds: 500
     min_mireds: 150

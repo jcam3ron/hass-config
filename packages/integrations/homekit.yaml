@@ -17,7 +17,7 @@ homekit:
         name: Adaptive Lighting
         type: switch
       switch.adaptive_lighting_sleep_mode:
-        name: Adaptive Lighting Sleep Mode
+        name: Adaptive Sleep Mode
         type: switch
 
 automation:

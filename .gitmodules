@@ -1,3 +1,6 @@
 [submodule "submodules/adaptive-lighting"]
 	path = submodules/adaptive-lighting
 	url = https://github.com/basnijholt/adaptive-lighting
+[submodule "submodules/climate_group"]
+	path = submodules/climate_group
+	url = https://github.com/daenny/climate_group.git

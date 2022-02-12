@@ -2,3 +2,10 @@
 climate:
   - platform: sensibo
     api_key: !secret sensibo_api_key
+
+  - platform: climate_group
+    name: 'Thermostat Group'
+    temperature_unit: C
+    entities:
+    - climate.living_room
+    - climate.main_bedroom

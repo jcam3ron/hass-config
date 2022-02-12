@@ -7,6 +7,7 @@ homekit:
       include_entities:
         - climate.living_room
         - climate.main_bedroom
+        - climate.thermostat_group
         - light.dining_nook_downlights
         - light.living_room_downlights
         - light.entryway_downlights

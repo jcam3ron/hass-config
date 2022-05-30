@@ -4,3 +4,6 @@
 [submodule "submodules/climate_group"]
 	path = submodules/climate_group
 	url = https://github.com/daenny/climate_group.git
+[submodule "submodules/localtuya"]
+	path = submodules/localtuya
+	url = https://github.com/rospogrigio/localtuya.git

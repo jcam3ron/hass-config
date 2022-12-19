@@ -5,7 +5,7 @@ adaptive_lighting:
       - light.living_area_downlights
       - light.stand_lamp
     prefer_rgb_color: false
-    transition: 5  # seconds
+    transition: 1  # seconds
     initial_transition: 1  # seconds
     interval: 90  # seconds
     min_brightness: 15  # percentage
@@ -21,6 +21,7 @@ adaptive_lighting:
     take_over_control: true
     detect_non_ha_changes: true
     only_once: false
+    adapt_delay: 1
 
   - name: "Bedroom"
     lights:

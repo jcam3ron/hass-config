@@ -3,6 +3,8 @@ homeassistant:
   name: Home
   unit_system: !secret unit_system
   time_zone: !secret timezone
+  currency: !secret currency
+  country: !secret country
   latitude: !secret latitude
   longitude: !secret longitude
   elevation: !secret elevation
@@ -17,9 +19,3 @@ default_config:
 # https://www.home-assistant.io/integrations/logger/
 logger:
   default: warn
-
-# https://www.home-assistant.io/integrations/upnp/
-# upnp:
-
-# https://www.home-assistant.io/integrations/discovery/
-discovery:

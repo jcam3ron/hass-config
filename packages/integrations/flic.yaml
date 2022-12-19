@@ -5,13 +5,13 @@ binary_sensor:
     discovery: true
 
 # flic button 1
-# automation:
-#   - id: flic_1_click
-#     alias: 'Flic 1 - click'
-#     trigger:
-#       - platform: webhook
-#         webhook_id: "flic_1_click"
-#     action:
-#       - service: light.toggle
-#         target:
-#           entity_id: light.living_area_lights
+automation:
+  - id: flic_1_click
+    alias: 'Flic 1 - click'
+    trigger:
+      - platform: webhook
+        webhook_id: "flic_1_click"
+    action:
+      - service: light.toggle
+        target:
+          entity_id: light.living_area_lights

@@ -1,6 +1,5 @@
 ---
 zone:
-
   - name: Home
     latitude: !secret latitude
     longitude: !secret longitude

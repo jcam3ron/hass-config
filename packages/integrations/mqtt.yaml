@@ -1,8 +1,8 @@
 ---
 mqtt:
-  broker: !secret mqtt_broker
-  port: !secret mqtt_port
-  discovery: true
+  # broker: !secret mqtt_broker
+  # port: !secret mqtt_port
+  # discovery: true
   # light:
   #   - schema: json
   #     name: "Living Room Downlights"

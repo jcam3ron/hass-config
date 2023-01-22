@@ -10,7 +10,6 @@ homekit:
         - climate.thermostat_group
         - light.dining_nook_downlights
         - light.living_room_downlights
-        - light.entryway_downlights
         - switch.adaptive_lighting
         - switch.adaptive_lighting_sleep_mode
     entity_config:

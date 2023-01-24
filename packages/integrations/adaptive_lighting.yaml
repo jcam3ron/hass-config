@@ -2,7 +2,8 @@
 adaptive_lighting:
   - name: "Living Room"
     lights:
-      - light.living_area_downlights
+      - light.dining_nook_downlights
+      - light.living_room_downlights
       - light.stand_lamp
     prefer_rgb_color: false
     transition: 1  # seconds

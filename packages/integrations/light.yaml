@@ -3,5 +3,6 @@ light:
   - platform: group
     name: "Living Area Lights"
     entities:
-      - light.living_area_downlights
+      - light.dining_nook_downlights
+      - light.living_room_downlights
       - light.stand_lamp
